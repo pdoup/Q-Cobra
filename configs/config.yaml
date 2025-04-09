@@ -1,0 +1,7 @@
+# Training Configuration for Snake DQN
+episodes: 100               # Total number of training episodes
+patience: 20                # Early stopping patience
+save_path: "snake_dqn_best_2.pth"  # Path to save the best model
+plot_filename: "training_progress_2.png"  # Filename for training plot
+evaluation_games: 5         # Number of games for evaluation
+load_model_path: null      # Path to a pre-trained model (set null to train from scratch)
