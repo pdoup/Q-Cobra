@@ -5,9 +5,7 @@
 
 ## Overview 📜
 
-This repository contains the implementation of an intelligent agent designed to master the classic game of Snake. Utilizing advanced Deep Reinforcement Learning (DRL) techniques based on Deep Q-Networks (DQN), this project aims to develop a high-performing agent capable of achieving substantial scores.
-
-The codebase is structured modularly for clarity and maintainability, separating concerns such as the game environment, the neural network model, the agent's logic, experience replay, training, evaluation, and utilities.
+This repository contains the implementation of an intelligent agent designed to master the classic game of Snake. Utilizing advanced Deep Reinforcement Learning (DRL) techniques based on Deep Q-Networks (DQN), this project aims to develop a high-performing agent.
 
 ## Key Features ✨
 
@@ -138,9 +136,9 @@ Common Options:
 * `--model-path`: Specify the path to the model file to load.
     * Example: `python play_game.py --model-path models/snake_dqn_advanced_best.pth` (Default: `snake_dqn_best.pth` - _Note: You might need to adjust this default or the filename based on your training output)_
 * `--num-games`: Set the number of games to play sequentially.
-    * Example: python play_game.py --num-games 3 (Default: 5)
+    * Example: `python play_game.py --num-games 3` (Default: 5)
 * `--delay`: Adjust the rendering speed (delay between steps in seconds). Lower is faster.
-    * Example: python play_game.py --delay 0.05 (Default: 0.01)
+    * Example: `python play_game.py --delay 0.05` (Default: 0.01)
 
 The script will render the game board in the terminal and print statistics after the requested number of games are completed.
 
