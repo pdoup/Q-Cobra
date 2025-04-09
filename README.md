@@ -1,5 +1,6 @@
 # Q-Cobra
 [![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Framework: PyTorch](https://img.shields.io/badge/framework-pytorch-ee4c2c.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
 ## Advanced DQN Agent for Snake 🐍
 ### A Deep Reinforcement Learning Implementation
 
