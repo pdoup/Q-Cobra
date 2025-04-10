@@ -4,11 +4,11 @@
 ## Advanced DQN Agent for Snake 🐍
 ### A Deep Reinforcement Learning Implementation
 
-## Overview 📜
+## 📜 Overview
 
 This repository contains the implementation of an intelligent agent designed to master the classic game of Snake. Utilizing advanced Deep Reinforcement Learning (DRL) techniques based on Deep Q-Networks (DQN), this project aims to develop a high-performing agent.
 
-## Key Features ✨
+## ✨ Key Features
 
 * **Classic Snake Environment:** 🎮 A clean implementation of the Snake game logic.
 * **Deep Q-Network (DQN) Foundation:** 🧠 Utilizes neural networks to approximate the action-value function (Q-function).
@@ -21,7 +21,7 @@ This repository contains the implementation of an intelligent agent designed to 
 * **Training Utilities:** Includes logging 📈 and plotting 📊 functionalities to monitor training progress.
 * **Configuration Management:** ⚙️ Training parameters managed via a YAML configuration file.
 
-## Technical Concepts 🔬
+## 🔬 Technical Concepts 
 
 This agent builds upon the foundational Deep Q-Network algorithm with several key enhancements:
 
@@ -35,7 +35,7 @@ This agent builds upon the foundational Deep Q-Network algorithm with several ke
 
 5.  **Multi-step Learning:** Rather than relying solely on the immediate reward and the estimated value of the very next state (1-step return), multi-step learning calculates target values using the discounted sum of rewards over 'n' future steps, plus the discounted estimated value of the state reached after those 'n' steps. This can accelerate the propagation of reward information through the agent's value estimates.
 
-## Installation 🛠️
+## 🛠️ Installation 
 
 1.  **Clone the Repository:**
     ```bash
@@ -65,7 +65,7 @@ This agent builds upon the foundational Deep Q-Network algorithm with several ke
     pip install -r requirements.txt
     ```
 
-## Usage 🚀
+## 🚀 Usage 
 
 The primary interaction with the project is through the `main.py` script for training and evaluation, and `play_game.py` for visual playback.
 
@@ -126,8 +126,8 @@ To evaluate a pre-trained model without running training:
  The script will skip training, load the specified model, and run the evaluation phase, printing the results.
 
 
-### Results & Performance 📊 
-#### Evaluation Summary 🎯
+### 📊 Results & Performance  
+#### 🎯 Evaluation Summary 
 
 Below are the aggregated performance metrics of the trained agent, evaluated over 50 independent game episodes
 ```bash
@@ -142,7 +142,7 @@ Average Steps per Game: 1744.2
 -------------------------------------------
 ```
 
- ### Playing (Visual Playback) ▶️
+ ### ▶️ Playing (Visual Playback) 
 
  To watch a trained agent play the game in your terminal:
  ```bash
