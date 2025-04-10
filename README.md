@@ -126,8 +126,8 @@ To evaluate a pre-trained model without running training:
  The script will skip training, load the specified model, and run the evaluation phase, printing the results.
 
 
-### 📊 Results & Performance
-#### 🎯 Evaluation Summary
+### Results & Performance 📊 
+#### Evaluation Summary 🎯
 
 Below are the aggregated performance metrics of the trained agent, evaluated over 50 independent game episodes
 ```bash
