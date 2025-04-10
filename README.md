@@ -62,6 +62,7 @@ This agent builds upon the foundational Deep Q-Network algorithm with several ke
     tqdm
     matplotlib
     PyYAML
+    pygame # optional
     ```
 
     Then, install the requirements:
@@ -163,6 +164,24 @@ Common Options:
     * Example: `python test.py --delay 0.05` (Default: 0.01)
 
 The script will render the game board in the terminal and print statistics after the requested number of games are completed.
+
+ ### ▶️ Playing (Visual Playback w/ PyGame) 
+
+ To watch a trained agent play the game in a visual window:
+ ```bash
+python test_gui.py [OPTIONS]
+```
+✅ *Note*: The available options are identical to those in the terminal-based playback (`test.py`) [above](https://github.com/pdoup/Q-Cobra/edit/main/README.md#%EF%B8%8F-playing-visual-playback), including:
+
+* `--model-path`: Path to the trained model
+* `--num-games`: Number of games to play
+* `--delay`: Milliseconds between steps (controls playback speed)
+
+⚠️ **Requirement**:
+Make sure you have `pygame` installed, as it is required for rendering the GUI. You can install it via:
+```bash
+pip install pygame
+```
 
 ## 📄 License
 
