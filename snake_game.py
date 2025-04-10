@@ -2,6 +2,7 @@
 """Defines the Snake game environment."""
 
 import random
+import sys
 import numpy as np
 import time
 
@@ -135,6 +136,7 @@ class SnakeGame:
         grid = [[" " for _ in range(GRID_WIDTH)] for _ in range(GRID_HEIGHT)]
         # Draw snake body first
         for x, y in self.snake[1:]:
+            # Check bounds before accessing grid index
             if 0 <= y < GRID_HEIGHT and 0 <= x < GRID_WIDTH:
                 grid[y][x] = "s"
         # Draw snake head
@@ -146,12 +148,18 @@ class SnakeGame:
         if 0 <= fy < GRID_HEIGHT and 0 <= fx < GRID_WIDTH:
             grid[fy][fx] = "F"
 
-        # Clear console (works better on Linux/macOS terminals)
-        print("\033[H\033[J", end="")
-        print(f"Score: {self.score}")
-        print("+" + "-" * GRID_WIDTH + "+")
+        # Build the entire frame as a string buffer
+        frame_buffer = list()
+        frame_buffer.append(f"Score: {self.score}")
+        frame_buffer.append("+" + "-" * GRID_WIDTH + "+")
         for row in grid:
-            print("|" + "".join(row) + "|")
-        print("+" + "-" * GRID_WIDTH + "+")
+            frame_buffer.append("|" + "".join(row) + "|")
+        frame_buffer.append("+" + "-" * GRID_WIDTH + "+")
+        frame_string = "\n".join(frame_buffer)
+
+        sys.stdout.write("\033[H\033[2J")
+        sys.stdout.write(frame_string + "\n")
+        sys.stdout.flush()
+
         if delay > 0:
             time.sleep(delay)
