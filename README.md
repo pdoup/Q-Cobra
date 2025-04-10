@@ -1,4 +1,7 @@
 # Q-Cobra
+
+![Gameplay Preview](assets/snake_playback.gif)
+
 [![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Framework: PyTorch](https://img.shields.io/badge/framework-pytorch-ee4c2c.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
