@@ -4,6 +4,7 @@
 
 [![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Framework: PyTorch](https://img.shields.io/badge/framework-pytorch-ee4c2c.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Graphics: Pygame](https://img.shields.io/badge/graphics-pygame-339933?logo=pygame&logoColor=white)](https://www.pygame.org/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 ## Advanced DQN Agent for Snake 🐍
 ### A Deep Reinforcement Learning Implementation
