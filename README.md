@@ -129,7 +129,7 @@ To evaluate a pre-trained model without running training:
 
  To watch a trained agent play the game in your terminal:
  ```bash
-python play_game.py [OPTIONS]
+python test.py [OPTIONS]
 ```
 
 Common Options:
