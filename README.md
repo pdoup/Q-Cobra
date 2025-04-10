@@ -171,7 +171,7 @@ The script will render the game board in the terminal and print statistics after
  ```bash
 python test_gui.py [OPTIONS]
 ```
-✅ *Note*: The available options are identical to those in the terminal-based playback (`test.py`) [above](https://github.com/pdoup/Q-Cobra/edit/main/README.md#%EF%B8%8F-playing-visual-playback), including:
+✅ *Note*: The available options are identical to those in the terminal-based playback (`test.py`) [above](https://github.com/pdoup/Q-Cobra/tree/main?tab=readme-ov-file#%EF%B8%8F-playing-visual-playback), including:
 
 * `--model-path`: Path to the trained model
 * `--num-games`: Number of games to play
