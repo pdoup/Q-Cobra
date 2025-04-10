@@ -115,6 +115,22 @@ python main.py --config path/to/your_custom_config.yaml
 * A plot visualizing training progress (scores, average scores, loss) will be saved to the `plots/` directory (e.g., `plots/training_progress_advanced.png`).
 * An evaluation phase will automatically run using the best saved model (or the model specified in `load_model_path`).
 
+### 📊 Results & Performance
+#### 🎯 Evaluation Summary
+
+Below are the aggregated performance metrics of the trained agent, evaluated over 50 independent game episodes
+```bash
+> python main.py -c configs/config.yaml
+
+Evaluating Agent: 100%|████████████████████████████████████████████████████████████| 50/50 [00:26<00:00,  1.88game/s, Last Score=27, Avg=41.66, Max=83, Avg Steps=1744.2]
+
+------ Evaluation Results (50 games) ------
+Average Score: 41.66
+Max Score: 83
+Average Steps per Game: 1744.2
+-------------------------------------------
+```
+
 ### Evaluation Only
 
 To evaluate a pre-trained model without running training:
