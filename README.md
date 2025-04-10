@@ -115,6 +115,17 @@ python main.py --config path/to/your_custom_config.yaml
 * A plot visualizing training progress (scores, average scores, loss) will be saved to the `plots/` directory (e.g., `plots/training_progress_advanced.png`).
 * An evaluation phase will automatically run using the best saved model (or the model specified in `load_model_path`).
 
+### Evaluation Only
+
+To evaluate a pre-trained model without running training:
+1. Modify your `config.yaml` file, setting `load_model_path` to the path of the desired model file (e.g., `load_model_path: "models/snake_dqn_advanced_best.pth"`).
+2. Run the main script:
+   ```bash
+   python main.py # Or python main.py --config your_eval_config.yaml
+   ```
+ The script will skip training, load the specified model, and run the evaluation phase, printing the results.
+
+
 ### 📊 Results & Performance
 #### 🎯 Evaluation Summary
 
@@ -130,16 +141,6 @@ Max Score: 83
 Average Steps per Game: 1744.2
 -------------------------------------------
 ```
-
-### Evaluation Only
-
-To evaluate a pre-trained model without running training:
-1. Modify your `config.yaml` file, setting `load_model_path` to the path of the desired model file (e.g., `load_model_path: "models/snake_dqn_advanced_best.pth"`).
-2. Run the main script:
-   ```bash
-   python main.py # Or python main.py --config your_eval_config.yaml
-   ```
- The script will skip training, load the specified model, and run the evaluation phase, printing the results.
 
  ### Playing (Visual Playback) ▶️
 
